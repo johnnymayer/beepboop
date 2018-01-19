@@ -1,6 +1,14 @@
 $(document).ready(function() {
-  $("form#userNumber").submit(function(event){
+  $("#formOne").submit(function(event) {
+    var blanks = ["userNumber", "person2", "animal", "exclamation", "verb", "noun", "adjective"];
+
+    blanks.forEach(function(blank) {
+      var userInput = $("input#userNumber").val();
+      $("." + blank).text(userInput);
+    });
+
+    $("#result").show();
+
     event.preventDefault();
-    var userEntry = $("input#userEntry").val();
   });
 });
