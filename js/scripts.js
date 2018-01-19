@@ -1,7 +1,18 @@
-var number = prompt("Enter a number");{
-  if { number.includes("0");
-    return alert("BEEP!");
-  } else {
-    return alert("NA!")
-  }
-}
+$(document).ready(function() {
+  $("form#userNumber").submit(function(event) {
+    event.preventDefault();
+    var number = $("input#number").val();
+    var numberMod = Array.from(number);
+    console.log(numberMod);
+
+    $(".number").text(number);
+
+    if (!result) {
+      $(".not").text("I'm sorry, Dave. I can't do that.");
+    } else {
+      $(".not").text("");
+    }
+
+    $("#result").show();
+  });
+});
