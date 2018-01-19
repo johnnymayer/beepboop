@@ -1,14 +1,16 @@
+var userEntryMod = function(userEntry) {
+  if (userEntry % 3 {
+    return true;
+  } else {
+    return false;
+  }
+};
+
 $(document).ready(function() {
-  $("#formOne").submit(function(event) {
-    var blanks = ["userNumber", "person2", "animal", "exclamation", "verb", "noun", "adjective"];
-
-    blanks.forEach(function(blank) {
-      var userInput = $("input#userNumber").val();
-      $("." + blank).text(userInput);
-    });
-
-    $("#result").show();
-
+  $("form#userEntry").submit(function(event) {
     event.preventDefault();
+    var userNumber = $(input#userNumber).val();
+    var result = userEntryMod(userEntry);
+    });
+    $("#result").text(result);
   });
-});
