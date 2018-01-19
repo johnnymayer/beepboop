@@ -1,16 +1,15 @@
-var userEntryMod = function(userEntry) {
-  if (userEntry % 3 {
-    return true;
+function beep(userArray) {
+    if(userArray.contains("0"))
+    { return alert("BEEEEEEP!");
   } else {
-    return false;
+    return userNumber;
   }
-};
-
+}
 $(document).ready(function() {
   $("form#userEntry").submit(function(event) {
     event.preventDefault();
-    var userNumber = $(input#userNumber).val();
-    var result = userEntryMod(userEntry);
-    });
-    $("#result").text(result);
+    var userNumber = $("input#userNumber").val();
+    var userArray = Array.from(userNumber);
+    console.log(userArray);
   });
+});
