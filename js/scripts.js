@@ -1,10 +1,6 @@
-
-
-
 $(document).ready(function() {
-  $("form#numberEntry").submit(function(event){
+  $("form#userNumber").submit(function(event){
     event.preventDefault();
-    var newArray = [];
-    }
+    var userEntry = $("input#userEntry").val();
   });
 });
