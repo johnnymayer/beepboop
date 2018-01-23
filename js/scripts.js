@@ -20,7 +20,7 @@ $(document).ready(function() {
     var inputtedUserNumber = $("input#userNumberInput").val();
     var numberArray = [];
       for(var i = 0; i <= inputtedUserNumber; ++i){
-        numberArray.push(numberMod(i));
+        numberArray.push(i);
       }
     numberMod(numberArray);
     $("#results").text(numberArray.join("-"));
