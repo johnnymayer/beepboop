@@ -9,18 +9,21 @@ OR
 Clone via https://github.com/johnnymayer/beepboop.git
 
 ## Specifications
-Any number containing a 0 will be replaced by the phrase "Beep!"
-  Example input: 0
-  Example output: ["Beep!"]
-Any number containing a 1 will be replaced by the phrase "Boop!"
-  Example input: 1
-  Example output: ["Boop!"]
-Any number divisible by 3 will be replaced by the phrase "I'm sorry, Dave. I'm afraid I can't do that."
-  Example input: 33
-  Example output: ["I'm sorry, Dave. I'm afraid I can't do that."]
-Any number not meeting these requirements will be outputted back to the user with no modifications.
-  Example input: 2
-  Example output: 2
+* Any number containing a 0 will be replaced by the phrase "Beep!"
+  * Example input: 0
+  * Example output: ["beep"]
+* Any number containing a 1 will be replaced by the phrase "Boop!"
+  * Example input: 1
+  * Example output: ["boop"]
+* Any number divisible by 3 will be replaced by the phrase "I'm sorry, Dave. I'm afraid I can't do that."
+  * Example input: 7
+  * Example output: beep-boop-2-Dave-4-5-Dave-7
+* Any number not meeting these requirements will be outputted back to the user with no modifications.
+  * Example input: 2
+  * Example output: 2
+* The number 425 will display a special message.
+  * Example input: 425
+  * Example output: A special quote, an easter egg if you will!
 
 ## Author
 Johnny Mayer
