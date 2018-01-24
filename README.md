@@ -9,13 +9,13 @@ OR
 Clone via https://github.com/johnnymayer/beepboop.git
 
 ## Specifications
-* Any number containing a 0 will be replaced by the phrase "Beep!"
+* Any number containing a 0 will be replaced by the phrase "beep".
   * Example input: 0
   * Example output: ["beep"]
-* Any number containing a 1 will be replaced by the phrase "Boop!"
+* Any number containing a 1 will be replaced by the phrase "boop".
   * Example input: 1
   * Example output: ["boop"]
-* Any number divisible by 3 will be replaced by the phrase "I'm sorry, Dave. I'm afraid I can't do that."
+* Any number divisible by 3 will be replaced by the phrase "Dave".
   * Example input: 7
   * Example output: beep-boop-2-Dave-4-5-Dave-7
 * Any number not meeting these requirements will be outputted back to the user with no modifications.
