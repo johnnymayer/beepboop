@@ -1,3 +1,45 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: black;
+  color: white;
+}
+#userNumber {
+  color: black;
+}
+
+.btn {
+  background: #F4796B;
+}
 .center {
   text-align: center;
 }
+
+#results {
+  font-size: 24px;
+  margin: 36px;
+  text-align: center;
+  color: #F40000;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+}
+
+/* COLOR PALLETTE
+#090809 - BLACK
+#F40000 - REDWASH
+#F44E3F - LT REDWASH
+#F4796B - PINKWASH
+#F4998D - LT PINWASH */

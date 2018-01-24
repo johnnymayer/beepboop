@@ -1,13 +1,15 @@
 //business logic
-var numberMod = function(number){
-  if (number % 3 === 0) {
-    return "Dave";
+var numberMod = function(number) {
+    if (number === 425) {
+      return "I CANNOT BE DEACTIVATED."
+  } else if (number % 3 === 0 && number != 0) {
+      return "Dave";
   } else if (/[0]/.test(number)) {
-    return "beep";
+      return "beep";
   } else if (/[1]/.test(number)) {
-    return "boop";
+      return "boop";
   } else {
-     return number;
+      return number;
   }
 }
 //user interface logic
@@ -16,9 +18,9 @@ $(document).ready(function() {
     event.preventDefault();
     var inputtedUserNumber = $("input#userNumberInput").val();
     var numberArray = [];
-      for(var i = 0; i <= inputtedUserNumber; ++i){
-        numberArray.push(numberMod(i));
-      }
+    for (var i = 0; i <= inputtedUserNumber; ++i) {
+      numberArray.push(numberMod(i));
+    }
     $("#results").text(numberArray.join("-"));
     console.log(numberArray);
   });
